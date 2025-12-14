@@ -1,0 +1,120 @@
+/* 기본 리셋 및 폰트 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* 메인 컨테이너 레이아웃 (Flexbox) */
+.editor-container {
+    display: flex;
+    flex-grow: 1; /* 남은 공간을 채우도록 설정 */
+    padding: 20px;
+    gap: 20px; /* 섹션 사이의 간격 */
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* 에디터 및 미리보기 창 */
+.editor-pane, .preview-pane {
+    flex: 1; /* 두 섹션이 동일한 너비를 갖도록 설정 */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* 내부 스크롤 처리를 위해 */
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-pane h2, .preview-pane h2 {
+    color: #007bff;
+    margin-top: 0;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* 입력 영역 (Textarea) 스타일 */
+#markdown-input {
+    width: 100%;
+    flex-grow: 1;
+    min-height: 400px; /* 최소 높이 설정 */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Consolas', 'Courier New', monospace; /* 코드 친화적 폰트 */
+    resize: none; /* 크기 조절 방지 */
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* 미리보기 영역 스타일 */
+#html-output {
+    flex-grow: 1;
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤 허용 */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* marked.js가 생성하는 마크다운 요소에 대한 기본 스타일 (가독성 향상) */
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+.markdown-body pre {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.markdown-body code {
+    background-color: #fff0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Consolas', 'Courier New', monospace;
+}
+
+/* 푸터 */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: auto; /* 하단에 고정 */
+}
+
+/* 모바일 반응형 디자인 */
+@media (max-width: 768px) {
+    .editor-container {
+        flex-direction: column; /* 화면이 좁아지면 세로로 배치 */
+        padding: 10px;
+    }
+
+    .editor-pane, .preview-pane {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
