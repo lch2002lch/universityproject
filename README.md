@@ -39,10 +39,10 @@
 2.  에디터 창에 다음 Markdown 문법을 입력합니다.
 
     ```markdown
-    ![이미지에 대한 설명](./TRphoto/파일명.확장자)
+    ![이미지에 대한 설명](TRphoto/파일명.확장자)
     ```
 
-    **예시:** `![산맥 사진](./TRphoto/landscape.jpg)`
+    **예시:** `![산맥 사진](TRphoto/landscape.jpg)`
 
 ---
 
