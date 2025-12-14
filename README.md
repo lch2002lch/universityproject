@@ -1,4 +1,4 @@
-# Markdown Live Editor 프로젝트 README
+# Markdown Live Editor 프로젝트
 
 이 프로젝트는 HTML, CSS, 그리고 순수 JavaScript(Vanilla JS)를 사용하여 개발된 실시간 Markdown 미리보기 웹 에디터입니다. 사용자가 왼쪽 입력창에 Markdown 형식의 텍스트를 입력하면, 오른쪽 미리보기 창에 즉시 HTML로 변환된 결과를 보여줍니다.
 
