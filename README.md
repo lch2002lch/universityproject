@@ -22,10 +22,6 @@
 | **Library** | [Marked.js](https://marked.js.org/) | Markdown을 HTML로 변환 |
 | **Storage** | Web Storage (`localStorage`) | 사용자 데이터 임시 저장 |
 
-## 파일 구조
-
-/markdown-live-editor ├── index.html # 메인 HTML 구조 ├── style.css # 프로젝트 스타일 시트 ├── script.js # JavaScript 핵심 로직 (변환 및 저장) └── TRphoto/ # 이미지 저장을 위한 사용자 정의 폴더 (예시) └── my-photo.jpg
-
 ## 로컬에서 실행하는 방법
 
 1.  **저장소 클론:** Git을 사용하여 이 저장소를 로컬 컴퓨터로 복사합니다.
